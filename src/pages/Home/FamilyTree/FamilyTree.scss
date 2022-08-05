@@ -1,0 +1,14 @@
+@import "@/styles/app";
+
+// familyTree
+#family-tree {
+  padding-top: clamp(8em, 10vh, 10em);
+  .v-card {
+    aside {
+      img {
+        width: clamp(8em, 16vw, 16.125em);
+        height: clamp(8em, 16vw, 16.125em);
+      }
+    }
+  }
+}

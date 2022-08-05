@@ -1,0 +1,52 @@
+@import "@/styles/app";
+
+// privacyPolicy
+#privacyPolicy {
+  font-size: 15px;
+  padding-top: clamp(3rem, 22vh , 8rem);
+  padding-bottom: 25em;
+  background: center no-repeat fixed;
+  background-size: cover;
+  h1 {
+    font-size: var(--step-em-5) !important;
+  }
+  h2 {
+    font-size: var(--step-em-4) !important;
+  }
+  h3 {
+    font-size: var(--step-em-3) !important;
+    font-weight: 600 !important;
+  }
+  h4 {
+    font-size: var(--step-em-2) !important;
+    font-weight: 600 !important;
+  }
+  p {
+    font-size: var(--step-em--1) !important;
+    line-height: 1.8 !important;
+  }
+  ul {
+    font-size: var(--step-em--1) !important;
+    margin-bottom: 16px;
+    li {
+      line-height: 1.8 !important;
+    }
+  }
+  a {
+    color: $clr-btn !important;
+    word-break: break-all !important;
+  }
+  @media (max-width: 880px) and (max-height: 1180px) {
+    text-align: justify !important;
+  }
+}
+@media (max-width: 1000px) {
+  #privacyPolicy {
+    padding-bottom: 30em !important;
+  }
+}
+@media (max-width: 630px) and (max-height: 1180px) {
+  #privacyPolicy {
+    padding-bottom: 35em !important;
+  }
+}

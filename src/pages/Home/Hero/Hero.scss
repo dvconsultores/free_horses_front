@@ -1,0 +1,49 @@
+@import "@/styles/app";
+
+// hero
+#hero {
+  padding-top: clamp(3rem, 22vh , 8rem);
+  .contimg {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      inset: 10% 11%;
+      border-radius: 50%;
+      animation: efecto 8s $ease-return infinite;
+      @keyframes efecto {
+        0% {box-shadow: inset -10px 10px 22px -22px var(--animation-horse);transform: rotate(90deg);transition: .5s ease;}
+        30% {box-shadow: inset -10px 10px 22px -22px var(--animation-horse),inset -20px -20px 22px -22px var(--animation-horse-second);transform: rotate(30deg);transition: .5s ease-in-out}
+        50% {box-shadow: inset -10px 10px 22px -22px var(--animation-horse),inset -20px -20px 22px -22px var(--animation-horse),inset -30px -30px 22px -22px var(--animation-horse-second);transform: rotate(0deg);transition: .5s ease-in-out}
+      }
+    }
+    img {
+      width: clamp(25em, 40vw, 42.3125em);
+      border-radius: 50%;
+      @media (max-width: 400px) and (max-height: 1180px) {
+        width: clamp(17em, 40vw, 42.3125em);
+      }
+    }
+  }
+  .contright {
+    max-width: clamp(30em, 30vw, 33.75em);
+    .v-btn {
+      // padding: 12px 32px;
+      width: clamp(8em, 10vw, 10em);
+      height: clamp(3em, 3.5vw, 3.5em);
+      background-color: $clr-btn;
+      span {
+        color: $clr-text-btn;
+        font-weight: 500;
+      }
+      &.roundedClass {
+        background-color: transparent !important;
+        border: 2px solid $clr-btn;
+        span, .v-icon {
+          color: $clr-btn !important;
+        }
+      }
+      // .v-icon {}
+    }
+  }
+}

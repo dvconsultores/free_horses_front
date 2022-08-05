@@ -1,0 +1,62 @@
+/* global colors */
+:root {
+  --bg: #000000;
+  --clr: #FFFFFF;
+  --clr-Inv: #555555;
+  --clr-card: #171717;
+  --clr-card-inv: #FFFFFF;
+  --clr-card-2: #171717;
+  --clr-card-3: #242424;
+  --clr-hover: #FFFFFF;
+  --clr-scroll: orange;
+  --clr-card-scroll: #171717;
+  --clr-text-btn: #FFFFFF;
+  --clr-btn: orange;
+  --clr-border: #FFFFFF;
+  --mix-blend-mode: multiply;
+  --clr-btn-footer: hsl(0 0% 100% / 0.11);
+  --animation-horse: orange;
+  --animation-horse-second: orangered;
+}
+
+/* defautl color */
+:is(span, p, h1, h2, h3, h4, h5, h6, .v-list-item__title, .v-btn span, button, label, ul):not(.notdefault-clr, .notdefault_clr) {
+  color: var(--clr);
+}
+:is(.v-icon, a, input):not(.notdefault-clr, .notdefault_clr) {
+  color: var(--clr) !important;
+}
+
+/* personal clases */
+.clr {
+  color: var(--clr) !important;
+}
+.clr-inv {
+  color: var(--clr-inv) !important;
+}
+.clr-card {
+  background-color: var(--clr-card) !important;
+}
+.clr-card-inv {
+  background-color: var(--clr-card-inv) !important;
+}
+.filter {
+  filter: invert(100%) !important;
+}
+.filter-inv {
+  filter: invert(0%) !important;
+}
+.filter_inv {
+  filter: invert(0%) !important;
+}
+.clr-svg {
+  fill: var(--clr) !important;
+}
+.clr-svg-inv {
+  fill: var(--clr-inv) !important;
+}
+.clr-card-2 {
+  background-color: var(--clr-card-2) !important;
+}
+
+/* ////////////////////////////////////////////// */

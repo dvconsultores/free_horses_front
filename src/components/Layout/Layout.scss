@@ -1,0 +1,281 @@
+@import "@/styles/app";
+
+// global
+.themeButtonDark {
+  position: relative;
+  width: 5em !important;
+  height: 2em !important;
+  background: black;
+  border-radius: 20px;
+  animation: aparecer 1s ease-in-out;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 70%;
+    inset: auto 5%;
+    background: #FFFFFF;
+    opacity: 1 !important;
+    border-radius: 50%;
+    margin-right: auto;
+    animation: moveright 0.6s ease;
+  }
+  &::after {
+    content: "Dark";
+    font-size: var(--step-em--2);
+    position: absolute;
+    color: $clr;
+    inset: auto 12% auto auto;
+    margin-left: auto;
+    text-align: end;
+    animation: moveleft 0.8s ease;
+  }
+  @keyframes moveright {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+.themeButtonLight {
+  position: relative;
+  width: 5em !important;
+  height: 2em !important;
+  background: $clr-btn;
+  border-radius: 20px;
+  animation: aparecer 1s ease-in-out;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 70%;
+    background: #FFFFFF;
+    opacity: 1 !important;
+    border-radius: 50%;
+    inset: auto 5% auto auto;
+    margin-left: auto;
+    animation: moveleft 0.6s ease;
+  }
+  &::after {
+    content: "Light";
+    font-size: var(--step-em--2);
+    position: absolute;
+    color: $clr;
+    inset: auto 10%;
+    margin-right: auto;
+    text-align: start;
+    animation: moveright 0.8s ease;
+  }
+  @keyframes moveleft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+
+// layout
+#layout {
+  background: var(--bg);
+}
+
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+
+// header
+#headerApp {
+  font-size: 16px;
+  @include mq(max, x-small) {font-size: 12px !important}
+  transition: 0.4s ease-in-out;
+  font-feature-settings: 'salt' on, 'liga' off !important;
+  z-index: 10;
+  // padding-inline: clamp(3em, 4vw, 4em);
+  .col {@include mq(max, x-small) {padding-inline: 0 !important}}
+  .contleft {
+    gap: 1em;
+    .toggle {
+      z-index: 10;
+      background-color: $clr-btn;
+    }
+    .logo {
+      width: 4.875em;
+      height: 3.3125em;
+      // width: clamp(6em, 12vw, 12em);
+      // height: clamp(3em, 4vw, 4em);
+    }
+  }
+  .contmiddle {
+    display: flex;
+    gap: clamp(2em, 3vw, 3em) !important;
+    a {
+      font-weight: 500;
+    }
+    // a:hover:before {
+    //   content: "";
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 0;
+    //   right: 0;
+    //   margin-inline: auto;
+    //   background-color: $clr-btn;
+    //   width: 90%;
+    //   height: 3px;
+    //   border-radius: $border;
+    //   animation: encoger 0.8s ease;
+    // }
+  }
+  .contright {
+    display: flex;
+    margin-left: clamp(1em, 2vw, 2em);
+    gap: 1em;
+    .walletButton:not(.active):hover:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border: 2px solid $clr-btn;
+      background-color: $clr-btn;
+      animation: hover 1s ease infinite alternate;
+    }
+    .walletButton {
+      position: relative;
+      padding: 1.2em;
+      border: 1px solid $clr-btn !important;
+      span {
+        font-weight: 500;
+        color: $clr-text-btn !important;
+      }
+    }
+  }
+}
+
+// menu header
+#menuHeader {
+  .v-list-item {
+    text-transform: uppercase;
+    $split-position:  49%;
+    $split-thickness: 4px;
+    a {
+      color: #555555 !important;
+      // position: relative;
+      // color: transparent !important;
+      // $split-position:  49%;
+      // $split-thickness: 4px;
+      // === Top/bottom mask =====
+    //   .mask {
+    //     display: block !important;
+    //     position: absolute !important;
+    //     overflow: hidden !important;
+    //     color: var(--clr);
+    //     top: 0 !important;
+    //     height: $split-position !important;
+    //     transition: all .8s cubic-bezier(.16,1.08,.38,.98) !important;
+    //     span { display: block !important; }
+    //   }
+    //   // === Bottom mask specific =====
+    //   .mask + .mask {
+    //     top: $split-position - 0.1 !important;
+    //     height: 100 - $split-position + 0.1 !important;
+    //     span { transform: translateY(-$split-position) !important; }
+    //   }
+    // }
+    // // === hover effect =====
+    // &:is(:hover, :active) {
+    //   .mask { color: $clr-text-btn !important; transform: skewX(12deg) translateX(5px) !important; }
+    //   .mask + .mask { transform: skewX(12deg) translateX(-5px) !important; }
+    //   & a::before { transform: scale(1) !important; }
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+
+// footer
+.v-footer {
+  padding-inline: 0;
+  p {
+    color: #D9DBE1 !important;
+  }
+  .row {
+    padding-inline: 5%;
+    padding-block: 2em;
+    &.after::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin-inline: auto;
+      width: 100%;
+      height: 1px;
+      background-color: #000000;
+    }
+    @include media-breakpoint-up(sm) {
+      justify-content: space-between;
+    }
+    .contleft {
+      gap: clamp(1em, 1.5vw, 1.5em);
+      span {
+        line-height: 1.5 !important;
+      }
+      .logoFooter {
+        width: 7em;
+        height: 9.0625em;
+      }
+      .conticons {
+        max-width: 11em;
+        .v-btn {
+          background-color: var(--clr-btn-footer);
+          width: 2.5em;
+          .socialIcons {
+            color: var(--clr-card-inv);
+            width: 100%;
+          }
+        }
+      }
+    }
+    .contright {
+      font-feature-settings: 'salt' on, 'liga' off !important;
+      gap: clamp(1em, 5vw, 5em);
+      div {gap: 0.5em;}
+      span {
+        width: max-content;
+        font-weight: 500;
+      }
+      a {
+        font-weight: 400 !important;
+      }
+      label {
+        font-weight: 400;
+        color: #D9DBE1 !important;
+      }
+      .v-input__slot {
+        background: #ffffff34;
+        border-radius: 8px;
+      }
+    }
+  }
+  @media (max-width: 1100px) {
+    .row {
+      justify-content: center;
+      gap: 1.5em;
+      padding-block: 1em;
+      font-size: 15px !important;
+      .contleft {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        .conticons {
+          gap: clamp(1em, 3vw, 3em);
+          max-width: max-content;
+          margin-inline: auto;
+        }
+      }
+      // .contright {}
+    }
+  }
+}

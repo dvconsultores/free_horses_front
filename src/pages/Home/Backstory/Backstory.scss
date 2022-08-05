@@ -1,0 +1,68 @@
+@import "@/styles/app";
+
+// backstory
+@media (max-width: 880px) and (max-height: 1180px) {
+  #video {
+    #media {
+      width: 100% !important;
+      border-radius: 0px !important;
+    }
+  }
+}
+#video {
+  padding-block: clamp(3rem, 22vh , 8rem);
+  .play {
+    position: absolute;
+    inset: auto;
+    width: clamp(4em, 9vw, 10.9375em);
+    height: clamp(4em, 10vw, 10.9375em);
+    opacity: 0.88;
+    background: center no-repeat url(../../../assets/icons/play.svg);
+    background-size: cover;
+    z-index: 2;
+  }
+  #media {
+    width: clamp(18em, 52vw, 58.9375em);
+    border-radius: 23px;
+  }
+}
+@media (max-width: 880px) and (max-height: 1180px) {
+  .contdown {
+    padding-top: clamp(6em, 20vh, 20em) !important;
+  }
+}
+
+#backstory {
+  padding-top: clamp(8em, 10vh, 10em);
+  p {
+    max-width: clamp(500px, 35vw, 600px);
+    a {
+      color: $clr-btn !important;
+    }
+  }
+  .v-btn {
+    background-color: transparent;
+    width: clamp(11em, 15vw, 15.1875em);
+    height: clamp(2.9em, 3vw, 3em);
+    border: 1px solid $clr-btn;
+    span, .v-icon {
+      color: $clr-btn !important;
+      font-weight: 500 !important;
+    }
+    // .v-icon {}
+  }
+  .horse {
+    width: clamp(17em, 30vw, 33.375em);
+    height: clamp(22em, 40vw, 39.04625em);
+  }
+}
+@media (max-width: 1100px) {
+  #backstory {
+    text-align: center !important;
+    flex-direction: column !important;
+    gap: 2em;
+    .v-btn {
+      margin-inline: auto !important;
+    }
+  }
+}

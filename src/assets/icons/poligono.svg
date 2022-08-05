@@ -1,0 +1,9 @@
+<svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect id="poligono 1" width="25" height="21" fill="url(#pattern0)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_316_16" transform="scale(0.04 0.047619)"/>
+</pattern>
+<image id="image0_316_16" data-name="poligono.png" width="25" height="21" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAVCAYAAACzK0UYAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEZSURBVHgBtZXbDYJAEEVniYVoB/oNJFKCJViCFagdaAdbigH+pQMpgX9I8A4BQngNj+X8DGE2uZmdE1AEgiA400ZkWRbt+EEpdUc5k3kiz/NOFj/lef6kDUjT9MK1CHFd94OgN5lFY4q4DmFwdw+UhMwQY4r6duoQpCYGp3lXUzCq3Q3D8Ieyp+XEjuMcmi+s9glMc6UVwNSORJ0QlgDlQ8vQtm1rMYTB0hZN01y2GMJLmysBn28uWwxhZiod4/xrqDkYwkqjTPoS8LKHpij6JAClvyjHkSMdZdtYJIC7vgl9URIxRFBal/11IUypdNLzftLOJoX0Kc2/h7Flzw5hSkWraUaVXRzCSkPVQoJSWVO/hS6+72uayR+Aj4S9q7v4zAAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>

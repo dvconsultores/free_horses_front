@@ -1,0 +1,9 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect id="instagram 1" width="32" height="32" fill="url(#pattern0)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_317_19" transform="scale(0.03125)"/>
+</pattern>
+<image id="image0_317_19" data-name="instagram.png" width="32" height="32" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKcSURBVHgBzVdtbhMxEH2bbNpCSfgogj/0P4Leg3KB5gQcAHEAxAF6AnqBhgMUToD4356g/VUUEEXpd7KdtztOXNdeO20i9UlPXq0tz7NnPGNnSERRFJk0S8JFYS5sChvaPRIOhZfCM+FplmVFyrxZbIAYpqFl4QPLYApOhP9FyBC3EaArbqvxu2CgQopkAbrqFVTbPAtwF/q+3cg8xlvSPJ2hcVvEHxFxaf9sOMabczIOnfOZ2rgpQH0+y20PiVhRWyVyq7ONeuMd4XvhK9RjT7grPEBYBG0djQVYRy2EL8IPmA5fhZ8Dfctic8CgNDvQRtw4J+wJ96HqPeAurep4IzgogvNkooRx8DIwiJP9Em4LPyIOjt/Q8UbE64BgZs9DGl+smfCNtluePq62K1zHJC74/UkN96x/PtD2Uh4RsKbtvvPfFxN00aZ+72Cy6lWEsUABOeI48hinwe/6r4u4z31omaqWChNg246hn8J/2reJcJC6aNIP01Q4ExM9T5/ZjXWkozGNceJJTZ/JbqmrrxSgOg6p2NHWt8oNbXeRjhFjYIh0N3B1DD76msfwm/5/pwLYd4B0lJnwQtiKDOxgsrUm+Ciia41xU28HcVxQwLnwYWCAWc1bVJEOSwSTE4PyMaoAdH1vzv8ewjjn1vMSGYqDOp8zOf1AdSJ8gWfyQl1MnOZSkUZSD3iB9FVD1+dbiBcjZs+UmDjmPbE8OlqOXyCMWZdj4pDleHwzERFUX3cnoE/p8zXUgzvkiwkbvAuU/bYAxsNzzPdKRvDY/zbX9PH5ZyxI09cB8zTet98I1xKQ3tv/Yj4iyrndt8H9e5g4QmKBmYLpn2aOCO7CI4SzpQ+MJ+aWwa0fpx4h5nm+gKp2+J7nrCtM7cnP8ys0lMw+64O+mAAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>

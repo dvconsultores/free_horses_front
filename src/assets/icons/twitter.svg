@@ -1,0 +1,9 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect id="twitter 1" width="32" height="32" fill="url(#pattern0)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_317_20" transform="scale(0.03125)"/>
+</pattern>
+<image id="image0_317_20" data-name="twitter.png" width="32" height="32" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJCSURBVHgBzVdLThtBFHxjm49DnCghyiIKFwi5QDhAkhPACdgjsQdxAAR7bsAJQGINF4ATwAoJkG3M3wxVntfQDDM9z19RUmns6Z6u6tf9+hOJEXEcR3hMghNgBSyDJS1+BNvgA3gL3kRRFFvajYoqQJhCU2DVE7TgGmzCSFt6MaA9rql4P2ipkdhsQHs9LUmYBwFG4SwrGlGG+BgeXwYo7ps4h4kH/2UpJV4ekrhom19V460BHfNBhj3PxLRqvTYgyYQbprhvovbKgJdqo8KUG4qKvqhJf5gDZ8A6uGP8hh1uVOCEUagGKs4qt3PKl5UOx1r3H/hX8lGFdpPiExIGe7cJLmaUzaTE/Xcn4B/JB7UnLQYa+lwDN8CfXtl84LsDZQjjEcLwDT/GApU+gXsp4UNtnEMzl/PdDynGvdvVQmAY6ykDv5V5OBIbyhyCoh2OQzAr3eHQWK9k2V4Z6nXpDkVj/+JAksNEEZhW+2KDS0MLHmmgbWz0RGxYETvaNHBvrLykbATqcKh2xY5OFtyBHwKVmIafJZmI8/o/C6vglnSHOxrgIZLzIG9C/gcXJHtVYzSYcitiTz0fN519GYsRe1W0G3KJ/SVJNIhjFW1Ib7jC6ajuDHAx+i6jxSnPiJ2w62GxJaNDyx1Q/XG/FFtK9gtqNN2fZwNwxIl4JsM14Y7n8RsDaoIVLmQ4Jjptp+8G7+9ikjJiSc8idH81S5lgFD5KeLVMg/OJl9NWz5fTDCPuej4uyQkq63rOfYVLu/l6/gQMgKxeyxAdBQAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>

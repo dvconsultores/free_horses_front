@@ -1,0 +1,164 @@
+@import "@/styles/app";
+
+.footerHerd {@include mq(max, x-small) {font-size: 12px !important}}
+// herd
+#herd {
+  font-size: 16px;
+  // padding-top: clamp(3rem, 22vh , 8rem);
+  padding-bottom: 25em;
+  font-feature-settings: 'salt' on, 'liga' off !important;
+  @include mq(max, 770px) {padding-bottom: 25em !important;}
+  @include mq(max, x-small) {font-size: 12px !important;padding-bottom: 40em !important}
+  .headerHerd {
+    height: max-content;
+    position: relative;
+    img {
+      position: absolute;
+      width: 100vw;
+      height: 100%;
+      @include mq(max, small) {object-fit: cover}
+    }
+    div {
+      max-width: min(90%, 80ch);
+      padding-block: 10em;
+      z-index: 2;
+      h1 {
+        font-family: 'Inter', sans-serif !important;
+        font-weight: 800;
+        font-size: clamp(2em, 4.5vw, 4.5em);
+        line-height: 1.2 !important;
+        color: #FFFFFF;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-bottom: 0;
+      }
+      p {
+        font-family: 'Inter', sans-serif !important;
+        font-weight: 400;
+        // font-size: clamp(.8em, 1.2vw, 1.125em);
+        line-height: 1.5 !important;
+        color: #FFFFFF;
+        margin-block: clamp(2em, 4vw, 4em) clamp(2em, 5vw, 5em);
+      }
+      .v-btn {padding: 1.4em 1.5em}
+    }
+  }
+  .contDescription{
+    margin-top: 2em;
+    margin-inline: clamp(0em, 8vw, 13em);
+    padding: 2em 3em;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 26px;
+    gap: 2em;
+    &>.v-card {
+      @include mq(min, 1100px) {grid-template-columns: repeat(2, 1fr)}
+      grid-gap: 1em;
+      padding-bottom: 2em;
+      &::after {
+        content: "";
+        @include absolute(0,auto,0,0);
+        background-color: #000000;
+        width: 95%;
+        height: 2px;
+      }
+      &:last-child:after {display: none !important}
+      &>img {
+        width: 100%;
+        max-width: 30em;
+        aspect-ratio: 1/1;
+        border-radius: 6px;
+      }
+      &>aside {
+        gap: 1em;
+        .v-btn {
+          padding: 1.6em 2em;
+          span {
+            font-weight: 500 !important;
+            color: #FFFFFF !important
+          }
+        }
+        .price {color: #262B33 !important}
+        .amount {color: #555555 !important}
+        .logoNear {
+          filter: invert(100%);
+          width: 1.1875em;
+          aspect-ratio: 1/1;
+        }
+        p {
+          color: #555555 !important;
+          line-height: 1.7 !important;
+        }
+      }
+    }
+  }
+  .contMiddle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em 1em;
+    margin-block: clamp(4em, 6vw, 6em) 2em;
+    @media (max-width: 880px) and (max-height: 1180px) {
+      grid-template-columns: repeat(2, 1fr) !important;
+      margin-block: clamp(4em, 6vw, 6em) !important;
+      @media (max-width: 600px) {
+        grid-template-columns: repeat(1, 1fr) !important;
+      }
+    }
+    .v-card {
+      --size: clamp(15em, 21vw, 21.875em);
+      min-height: calc(var(--size) + 6em);
+      aside {gap: 1em;div {gap: .2em}}
+      h4 {color: #555555 !important}
+      img {
+        border-radius: 8px;
+        width: var(--size);
+        aspect-ratio: 1 / 1;
+        transition: 0.4s $ease;
+        color: #555555 !important;
+      }
+      span {font-weight: 600 !important;color: #555555 !important}
+      a {font-weight: 400 !important; color: #555555 !important; text-decoration: underline}
+      .empty {
+        width: clamp(15em, 21vw, 21.875em);
+        border: .5em dashed $clr-btn;
+        background-color: hsla(0, 0%, 100%, 0.3);
+        img {
+          width: clamp(4em, 5vw, 5.125em);
+          aspect-ratio: 1 / 1;
+          color: #555555 !important;
+        }
+      }
+    }
+  }
+  .contBottom {
+    margin-bottom: 4em;
+    & > div {
+      h2 {
+        font-family: 'Inter', sans-serif !important;
+        font-weight: 800;
+        // font-size: clamp(3.5em, 4.5vw, 4.5em);
+        max-width: 12ch;
+        color: #555555 !important;
+        span {color: $clr-btn !important;font-weight: 800}
+      }
+      & > span {
+        font-family: 'Inter', sans-serif !important;
+        font-weight: 400;
+        // font-size: 1.125em;
+        color: #555555 !important;
+        margin-block: 1em;
+      }
+      & > div {
+        .v-icon {
+          font-size: clamp(5em, 7vw, 7em);
+          color: #555555 !important;
+        }
+      }
+    }
+    .heroImg {
+      width: clamp(25em, 40vw, 42.3125em);
+      border-radius: 50%;
+      @media (max-width: 400px) and (max-height: 1180px) {
+        width: clamp(17em, 40vw, 42.3125em);
+      }
+    }
+  }
+}

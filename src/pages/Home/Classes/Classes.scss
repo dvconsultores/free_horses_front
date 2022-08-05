@@ -1,0 +1,53 @@
+@import "@/styles/app";
+
+// classes
+#classes {
+  @media (max-width: 800px) and (max-height: 1180px) {
+    .contcollage {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+  @media (max-width: 360px) and (max-height: 1180px) {
+    .contcollage {
+      grid-template-columns: repeat(1, 1fr) !important;
+    }
+  }
+  .contcollage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    animation: aparecer 1s ease;
+    margin-block: 4em 2em;
+    aside {
+      &:hover img {
+        border-radius: 50%;
+      }
+      img {
+        border-radius: 8px;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        transition: 0.4s $ease;
+      }
+      h3 {
+        font-weight: 600 !important;
+      }
+      a {
+        font-weight: 400 !important;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.contmorebtn {
+  margin-bottom: 4em;
+  .v-btn {
+    padding: 1.8em 2em !important;
+    width: clamp(7em, 8vw, 8em) !important;
+    background-color: $clr-btn !important;
+    animation: aparecer 0.5s ease;
+    span {
+      color: $clr-text-btn !important;
+      font-weight: 500 !important;
+    }
+  }
+}

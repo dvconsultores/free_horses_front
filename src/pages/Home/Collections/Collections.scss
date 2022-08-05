@@ -1,0 +1,12 @@
+@import "@/styles/app";
+
+// collections
+#collections {
+  padding-top: 8em;
+  gap: clamp(1em, 3vw, 3em);
+  img {
+    width: min(90%, 69.25em);
+    // aspect-ratio: 1 / .6;
+    border-radius: 12px;
+  }
+}
